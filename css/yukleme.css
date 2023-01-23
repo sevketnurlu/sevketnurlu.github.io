@@ -1,0 +1,32 @@
+@keyframes slideInFromLeft {
+  0% {
+      transform: translateX(-100%);
+  }
+
+  100% {
+      transform: translateX(0);
+  }
+}
+
+header,img {
+  /* This section calls the slideInFromLeft animation we defined above */
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+
+}
+
+/* Added for aesthetics */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, Helvetica, Sans Serif;
+}
+
+.copyright {
+  background-color: #19262F;
+  padding-top: 2.4rem;
+  padding-bottom: 2.4rem;
+  width: 100%;
+  float: right;
+  color: #fff;
+  text-align: center;
+  z-index: 100;
+}
